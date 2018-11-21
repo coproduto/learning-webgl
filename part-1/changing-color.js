@@ -17,7 +17,7 @@ window.addEventListener("load", function initWebGL (evt) {
   const theCanvas = document.getElementById("the-canvas");
   
   getWebGLContext(
-    document.getElementById("the-canvas"),
+    theCanvas,
     (ctx) => {
       ctx.viewport(0, 0, ctx.drawingBufferWidth, ctx.drawingBufferHeight);
       ctx.clearColor(0, 0.5, 0.0, 1.0);
